@@ -1,0 +1,21 @@
+* {
+    padding: 0;    
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    widht: 1000px;
+    border: 1px solid red;
+}
+aside .photo {
+    width: 122px;
+    height: 122px;
+    border: 4px solid #ff7378;
+    border-radius: 50%;
+}
+aside .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
