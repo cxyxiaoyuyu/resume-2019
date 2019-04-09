@@ -6,13 +6,18 @@
 ol li {
     list-style: none;
 }
+
+body {
+    background: #ececec;
+}
 .clearfix::after {
     display: block;
     content: '';
     clear: both;
 }
 .container {
-    widht: 1000px;
+    width: 800px;
+    margin: 0 auto;
     border: 1px solid red;
 }
 aside {
@@ -20,6 +25,8 @@ aside {
     border: 1px solid red;
     display: flex;
     justify-content: center;
+    width: 25%;
+    padding: 30px;
 }
 main {
     float: left;
