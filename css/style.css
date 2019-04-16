@@ -1,0 +1,116 @@
+* {
+    padding: 0;    
+    margin: 0;
+    box-sizing: border-box;
+}
+ol li {
+    list-style: none;
+}
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+body {
+    background: #ececec;
+}
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+aside {
+    float: left;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background: #f7f7f7;
+    flex-direction: column;
+}
+aside .photo {
+    width: 122px;
+    height: 122px;
+    border: 5px solid #ff7378;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+aside .photo img{
+    width: 100%;
+    border-radius: 50%;
+}
+aside .basic-info{
+    padding: 30px;
+} 
+aside .basic-info h3 {
+    color:  #ff7378;
+    margin-bottom: 12px;
+}
+aside .basic-info ol li{
+    padding: 6px 0;
+}
+aside .skills {
+    background: #ff7378; 
+    color: #fff;
+    padding-bottom: 22px;
+}
+aside .skills h3 {
+    color: #fff;
+    margin: 10px 0px 12px 30px;
+}
+aside .skills dl {
+    padding: 0 30px;
+}
+aside .skills dl dt{
+    margin-top: 15px;
+} 
+aside .skills dl dd{
+    width: 100%; 
+    height: 5px;
+    background: #fbaeae;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+aside .skills dl dd span{
+    display: block;
+    height: 5px;
+    border-radius: 2px;
+    background: #fff;
+}
+aside .link {
+    padding: 30px;
+}
+aside .link h3{
+    color: #ff7378;
+    margin-bottom: 16px;
+}
+aside .link ol li{
+    margin: 8px 0;
+}
+aside .link ol li svg{
+    width: 1.1em;
+    height: 1.1em;
+}
+aside .link ol li a{
+    padding-left: 8px;
+    color: #333;
+    text-decoration: none;
+}
+main {
+    float: left;
+    widht: 75%;
+}
+main  .intro {
+    padding: 30px 38px;
+    color: #ff7378;
+}
+main  .intro h1{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+main  .intro span{
+    font-size: 16px;
+    font-weight: bold;
+}
