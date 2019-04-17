@@ -193,3 +193,21 @@ main .section-content .skills li p{
     padding-top: 3px;
     padding-bottom: 8px;
 }
+main .section-content .projects .project ul{
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 600px;
+}
+main .section-content .projects .project {
+    margin-bottom: 8px;
+}
+main .section-content .projects span {
+    color: #f4543f;
+    font-weight: bold;
+    font-size: 13px;
+}
+main .section-content .projects span.link {
+    padding-right: 20px;
+    margin-top: 4px;
+    display: inline-block;
+}
