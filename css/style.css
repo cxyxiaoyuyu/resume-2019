@@ -3,8 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-ol li {
+ol li,ul li {
     list-style: none;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 .clearfix::after {
     display: block;
@@ -105,11 +109,19 @@ aside .link ol li a{
 }
 main {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 main  .intro {
     color: #ff7378;
     padding-bottom: 30px;
     margin-left: 20px;
+    position: relative;
+}
+main  .intro a{
+    position: absolute;
+    right: 240px;
+    bottom: 30px;
+    font-size: 18px;
 }
 main  .intro h1{
     font-size: 30px;
@@ -156,7 +168,7 @@ main .section-content .brief {
 main .section-content .work-content {
     margin-bottom: 8px;
 }
-main .section-content .work-content h4 {
+main .section-content h4 {
     color: #ff7378;
 }
 main .section-content .work-content p{
@@ -175,4 +187,9 @@ main .section-content .work-project ul li p{
 }
 main .section-content .work-project ul li h5{
     color: #f48a8ed1;
+}
+main .section-content .skills li p{
+    padding-left: 15px; 
+    padding-top: 3px;
+    padding-bottom: 8px;
 }
