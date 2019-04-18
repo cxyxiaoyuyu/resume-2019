@@ -177,8 +177,7 @@ main .section-content h4 {
     color: #ff7378;
 }
 main .section-content .work-content p{
-    padding-left: 15px;
-    padding-top: 3px;
+    padding: 3px 15px;
 }
 main .section-content .work-project h4{
     color: #ff7378;
@@ -187,12 +186,16 @@ main .section-content .work-project ul{
     padding-left: 15px;
     padding-top: 8px;
 }
+main .section-content .work-project ul li:not(:last-child){
+    padding-bottom: 6px;
+}
 main .section-content .work-project ul li p{
-    padding: 5px 0px;
+    padding: 3px 0px;
 }
 main .section-content .work-project ul li h5{
     color: #e97175;
     position: relative;
+    font-size: 14px;
 }
 main .section-content .work-project ul li h5::before{
     content: '';
@@ -216,12 +219,12 @@ main .section-content .projects .project ul{
     width: 600px;
 }
 main .section-content .projects .project {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 main .section-content .projects span {
     color: #f4543f;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
 }
 main .section-content .projects span.link {
     padding-right: 20px;
