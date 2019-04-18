@@ -119,7 +119,7 @@ main  .intro {
     margin-left: 20px;
     position: relative;
 }
-main  .intro a{
+main  .intro .resume-link{
     position: absolute;
     right: 240px;
     bottom: 0px;
