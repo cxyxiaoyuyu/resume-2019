@@ -1,233 +1,252 @@
-* {
-    padding: 0;    
-    margin: 0;
-    box-sizing: border-box;
+/* 定义变量 */
+:root {
+  /* --textColor: #112972cf; */
+  --textColor: black;
+  --introColor: #406de9cf;
+  /* --briefColor: #1247dc; */
+  --briefColor: #000;
+  --title: #1c4ed9cf;
+  /* --title: black; */
+  --subTitle: #5e80dfcf; 
+  /* --subTitle: black; */
+  --online:#1c4ed9cf;
+  --svgColor: #5d7dd6cf;
 }
-ol li,ul li {
-    list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ol li,
+ul li {
+  /* list-style-type: disc; */
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 .clearfix::after {
-    display: block;
-    content: '';
-    clear: both;
+  display: block;
+  content: "";
+  clear: both;
+}
+h1 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+h4 {
+  color: var(--title);
+  font-size: 16px;
+}
+h5 {
+  color: var(--subTitle);
+  font-size: 15px;
+}
+.online {
+  color: var(--online);
+  font-size: 15px;
+  font-weight: bold;
+}
+.svg {
+  fill: var(--svgColor);
+}
+p{
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 25px;
+  padding-left: 12px;
 }
 
 body {
-    background: #ececec;
+  background: #ececec;
+  color: var(--textColor);
+  font-size: 15px;
 }
 .container {
-    width: 1000px;
-    margin: 0px auto;
-    background: #fff;
-    box-shadow: 0px 0px 9px 1px rgba(0,0,0,.2);
-    border-radius: 2px;
-    display: flex;
+  width: 1000px;
+  margin: 0px auto;
+  background: #fff;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #bcc2ec96;
+  border-radius: 2px;
+  display: flex;
 }
 aside {
-    display: flex;
-    padding-top: 60px;
-    background: #fbdbdb96;
-    flex-direction: column;
+  display: flex;
+  padding-top: 60px;
+  background: #bcc2ec96;
+  flex-direction: column;
 }
 aside .photo {
-    width: 122px;
-    height: 122px;
-    border: 5px solid #ff7378;
-    border-radius: 50%;
-    margin: 0 auto;
+  width: 122px;
+  height: 122px;
+  border: 5px solid #89a2e8cf;
+  border-radius: 50%;
+  margin: 0 auto;
 }
-aside .photo img{
-    width: 100%;
-    border-radius: 50%;
+aside .photo img {
+  width: 100%;
+  border-radius: 50%;
 }
-aside .basic-info{
-    padding: 30px;
-    margin-top: 15px;
-} 
+aside .basic-info {
+  padding: 30px;
+  margin-top: 15px;
+  color: var(--title);
+}
 aside .basic-info h3 {
-    color:  #ff7378;
-    margin-bottom: 12px;
+  color: #5d7dd6cf;
+  margin-bottom: 12px;
 }
-aside .basic-info ol li{
-    padding: 8px 0;
+aside .basic-info ol li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
 }
-aside .basic-info ol li svg{
-    fill: #ff7378;
+aside .basic-info ol li svg {
+  margin-right: 8px;
 }
 aside .skills {
-    background: #ff7378; 
-    color: #fff;
-    padding-bottom: 22px;
-    margin-top: 15px;
+  background: #5d7dd6cf;
+  color: #fff;
+  padding-bottom: 22px;
+  margin-top: 15px;
 }
 aside .skills h3 {
-    color: #fff;
-    margin: 10px 0px 12px 30px;
+  color: #fff;
+  margin: 10px 0px 12px 30px;
 }
 aside .skills dl {
-    padding: 0 30px;
+  padding: 0 30px;
 }
-aside .skills dl dt{
-    margin-top: 15px;
-} 
-aside .skills dl dd{
-    width: 100%; 
-    height: 5px;
-    background: #fbaeae;
-    border-radius: 2px;
-    margin-top: 8px;
+aside .skills dl dt {
+  margin-top: 15px;
 }
-aside .skills dl dd span{
-    display: block;
-    height: 5px;
-    border-radius: 2px;
-    background: #fff;
+aside .skills dl dd {
+  width: 100%;
+  height: 5px;
+  background: #9daee4cf;
+  border-radius: 2px;
+  margin-top: 8px;
+}
+aside .skills dl dd span {
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background: #fff;
 }
 aside .link {
-    padding: 30px;
-    margin-top: 15px;
+  padding: 30px;
+  margin-top: 15px;
 }
-aside .link h3{
-    color: #ff7378;
-    margin-bottom: 16px;
+aside .link h3 {
+  color: #5d7dd6cf;
+  margin-bottom: 16px;
 }
-aside .link ol li{
-    margin: 8px 0;
+aside .link ol li {
+  margin: 8px 0;
 }
 aside .link ol li svg {
-    fill: #ff7378;
+  fill: #5d7dd6cf;
 }
-aside .link ol li svg{
-    width: 1.1em;
-    height: 1.1em;
+aside .link ol li svg {
+  width: 1.1em;
+  height: 1.1em;
 }
-aside .link ol li a{
-    padding-left: 8px;
-    color: #333;
-    text-decoration: none;
+aside .link ol li a {
+  padding-left: 8px;
+  color: #333;
+  text-decoration: none;
 }
 main {
-    padding-top: 60px;
-    padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
-main  .intro {
-    color: #ff7378;
-    margin-left: 20px;
-    position: relative;
+main .intro {
+  color: var(--introColor);
+  margin-left: 20px;
+  position: relative;
 }
-main  .intro .resume-link{
-    position: absolute;
-    right: 240px;
-    bottom: 0px;
-    font-size: 18px;
+
+main .intro .job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 60px;
 }
-main  .intro h1{
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-main  .intro span{
-    font-size: 16px;
-    font-weight: bold;
-}
-main .section{
-    margin: 30px 0;
+
+main .section {
+  margin: 30px 0;
 }
 main .section .section-title {
-    background: #ff7378cf;
-    display: inline-block;
-    color: #fff;
-    padding: 5px 46px;
-    position: relative;
-    border-radius: 2px;
-    margin-left: 16px;
+  background: #5d7dd6cf;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 46px;
+  position: relative;
+  border-radius: 2px;
+  margin-left: 16px;
 }
 main .section .section-title svg {
-    top: calc(50% - 0.6em);
-    position: absolute;
-    left: 14px;
-    width: 1.2em;
-    height: 1.2em;
+  top: calc(50% - 0.6em);
+  position: absolute;
+  left: 14px;
+  width: 1.2em;
+  height: 1.2em;
 }
 main .section .section-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    border-right: 26px solid #e97175;
-    border-bottom: 14px solid transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-right: 26px solid #5d7dd6cf;
+  border-bottom: 14px solid transparent;
 }
-main .section .work{
-    margin-right: 32px;
+main .section .work {
+  margin-right: 32px;
 }
 main .section-content {
-    padding: 10px 42px;
-    margin-top: 10px;
+  padding: 0 42px;
+  margin-top: 16px;
 }
 main .section-content .brief {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--briefColor);
 }
 main .section-content .work-content {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
-main .section-content h4 {
-    color: #ff7378;
+main .section-content .work-project ul {
+  padding-left: 15px;
+  padding-bottom: 8px;
 }
-main .section-content .work-content p{
-    padding: 3px 15px;
+.work-project ul li {
+  list-style-type: disc;
+  margin-top: 8px;
 }
-main .section-content .work-project h4{
-    color: #ff7378;
+main .section-content .skills li {
+  margin-bottom: 16px;
 }
-main .section-content .work-project ul{
-    padding-left: 15px;
-    padding-top: 8px;
+main .section-content .skills li:last-child{
+  margin-bottom: 0;
 }
-main .section-content .work-project ul li:not(:last-child){
-    padding-bottom: 6px;
-}
-main .section-content .work-project ul li p{
-    padding: 3px 0px;
-}
-main .section-content .work-project ul li h5{
-    color: #e97175;
-    position: relative;
-    font-size: 14px;
-}
-main .section-content .work-project ul li h5::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    background: #ff7378;
-    border-radius: 50%;
-    top: calc(50% - 3.5px);
-    left: -12px; 
-}
-main .section-content .skills li p{
-    padding-left: 15px; 
-    padding-top: 3px;
-    padding-bottom: 8px;
-}
-main .section-content .projects .project ul{
-    padding-left: 15px;
-    padding-top: 5px;
-    width: 600px;
+main .section-content .projects .project ul {
+  padding-left: 15px;
+  padding-top: 5px;
+  width: 600px;
 }
 main .section-content .projects .project {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-main .section-content .projects span {
-    color: #f4543f;
-    font-weight: bold;
-    font-size: 14px;
+main .section-content .projects .project .title{
+  display: flex;
+  justify-content: space-between;
 }
+
 main .section-content .projects span.link {
-    padding-right: 20px;
-    margin-top: 4px;
-    display: inline-block;
+  padding-right: 20px;
+  margin-top: 4px;
+  display: inline-block;
 }
