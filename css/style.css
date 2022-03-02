@@ -223,7 +223,7 @@ main .section-content .work-project ul {
   padding-bottom: 8px;
 }
 .work-project ul li {
-  list-style-type: disc;
+  /* list-style-type: disc; */
   margin-top: 8px;
 }
 main .section-content .skills li {
